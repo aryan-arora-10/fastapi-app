@@ -1,4 +1,4 @@
-# README.MD FASTAPI 
+# THE README.MD FASTAPI 
 ####    FastAPI,Docker, PostgreSQL,ORM,CI/CD freecodecamp sanjeev thiagarajan
 
 ## pointers and venv setup    
@@ -7,9 +7,10 @@
 change interpreter path in vscode Command palette then use virtual env in the terminal as well
 2. "python3 -m venv venv" to create a virtual env in terminal
 3. "source venv/bin/activate" to activate in the terminal using the file in bin/ in venv/
-4. we put main.py in app folder amd make an empty __init__.py file to let pyhton know that this is a package
+4.  we put main.py in app folder amd make an empty __init__.py file to let pyhton know that this is a package
 5. "pip install psycopg2-binary" cuz just install 'psycopg2' didn't work
-6. Python version 3.10.12
+6.  Python version 3.10.12
+7.  sudo apt install python3.10-venv 
 ```
 
 ## Different versions of main.py oldmains/
