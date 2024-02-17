@@ -1,0 +1,14 @@
+# virtual environment
+venv/
+
+# remove __pycache__
+app/__pycache__
+
+__pycache__
+
+app/routers/__pycache__
+# check text.txt
+app/test.txt
+
+# ENV VARIABLES
+.env 
