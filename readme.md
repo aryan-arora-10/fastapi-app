@@ -8,9 +8,11 @@ change interpreter path in vscode Command palette then use virtual env in the te
 2. "python3 -m venv venv" to create a virtual env in terminal
 3. "source venv/bin/activate" to activate in the terminal using the file in bin/ in venv/
 4.  we put main.py in app folder amd make an empty __init__.py file to let pyhton know that this is a package
-5. "pip install psycopg2-binary" cuz just install 'psycopg2' didn't work
+5. "pip install psycopg2-binary" cuz just install 'psycopg2' didn't work. Also ,ight need pip httptools and uvlooop
+before installing gunicorn
 6.  Python version 3.10.12
 7.  sudo apt install python3.10-venv 
+8. gunicorn==21.2.0
 ```
 
 ## Different versions of main.py oldmains/
@@ -67,3 +69,12 @@ alembic history
 Perform a get request from the console of the a website. If you navigate to google
 or YT and run this you get a CORS error because the requests thare being made to fromYT are not going to the youtube domain but a separate domain from yt and thus requests from that origin (YT over here) don't go through
 ```
+
+### SET AND UNSET ENV vars
+```
+export MYNAME=robo  # sets an env variable 
+printenv | grep MYNAME 
+unset MYNAME
+printenv | grep MYNAME          
+```
+### HAVE ENV vars persist through a reboot
