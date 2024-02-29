@@ -35,7 +35,10 @@ def get_all_posts(limit: int = 10,skip: int=0, db: Session = Depends(get_db)):
     print(f"\n\nThe type of posts received is {type(posts)}")
 
     db.query().all() results are in the format ***(<app.models.Post object at 0x7f411b762050>, 0)***
-    this is a tuple of post object and the votes from the AGGREGATE FUNC AND OUTER LEFT JOIN
+    this is a tuple of post object and the votes from the AGGREGATE FUNC AND OUTER LEFT JOIN.
+
+    Creation of post_with_votes wwas only required once we had included the votes along with the content 
+    of the posts
     '''
     results = db.query(models.Post,func.count(models.Votes.post_id).label("votes")).join(
         models.Votes,models.Votes.post_id == models.Post.id, isouter=True).group_by(models.Post.id).all()

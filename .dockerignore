@@ -7,11 +7,12 @@ app/__pycache__
 __pycache__
 
 app/routers/__pycache__
-# check text.txt
-app/test.txt
 
 # ENV VARIABLES
-.env 
+.env
 
-#pytest cache
-.pytest_cache
+#systemd services and nginx
+gunicornapi-og.service
+gunifast service
+nginx
+requirements.txt.bak

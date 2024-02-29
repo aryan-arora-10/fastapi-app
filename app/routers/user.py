@@ -17,8 +17,8 @@ def create_new_user(user: schemas.UserCreate,db: Session = Depends(get_db)):
     user.password = hashed_password # set user genearted password back to paswd attr of USER obj
 
     teste = user.model_dump()#CONVERT TO DICT()
-    print(teste)
-
+    print("this is user dict was being printed during pytest") 
+    # print(teste)
     new_user = models.User(**teste)
     '''**teste unpacks the dict and puts it into the db.add(models.User(**teste))
     sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint
