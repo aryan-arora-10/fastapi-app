@@ -46,7 +46,7 @@ jobs:
       needs: [testapp]
       steps:
         - name: using apple boy
-          uses: appleboy/ssh-action
+          uses: appleboy/ssh-action@master
           with:
             host: ${{secrets.EC2_HOST}}
             username: ${{secrets.EC2_USER}}
