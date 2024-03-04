@@ -87,3 +87,20 @@ migh need to edit bashrc or .profile on the VM itself
 -v is for increased verbosity
 pytest -s -x testdir/test_functionality.py => run pytest only for that file
 ```
+
+### CERTBOT AND SSL
+```
+our LetsEncrypt SSL certificates expire in 90 days. Certbot has a timer which renews the certs as part of
+systemctl timers. Check screenshots for the commands and outputs
+``` 
+
+### DOCKER ON ubuntu 
+```
+Install docker on the ubuntu vm using
+    ***"sudo apt install docker.io"***
+    Use below command to prevent docker.sock permission denied
+    "sudo usermod -aG docker $USER" to add the current user to the group
+
+    Changing the groups of a user does not change existing logins, terminals, and shells that a user has open. To avoid performing a login again, you can simply run:
+    "newgrp docker" 
+```
