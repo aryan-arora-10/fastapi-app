@@ -59,8 +59,9 @@ jobs:
             git pull origin main
             echo ".............CODE PULL COMPLETE............" 
             docker compose -f docker-compose-prod.yaml down
-            echo " Shutting down previous containers"
-            docker system prune -a
+            echo "............DOCKER COMPOSE DOWN RAN........." 
+            yes | docker system prune -a
+            echo "............PRUNED DOCKER SYSTEM -A........." 
             docker compose -f docker-compose-prod.yaml up -d --build
             echo "Deployment successful"
             EOF
