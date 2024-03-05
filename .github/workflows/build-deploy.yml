@@ -50,12 +50,13 @@ jobs:
           uses: webfactory/ssh-agent@v0.5.3
           with:
             ssh-private-key: ${{secrets.SSH_KEY}}
+            # ssh -o StrictHostKeyChecking=no -i {{ secrets.SSH_KEY}} {{secrets.EC2_USER}}@{{secrets.EC2_HOST}} 
         - name: SSH and Deploy
           run: |
-            ssh -o StrictHostKeyChecking=no -i ${{ secrets.SSH_KEY}} ${{secrets.EC2_USER}}@${{secrets.EC2_HOST}}
+            ssh -o StrictHostKeyChecking=no ${{secrets.EC2_USER}}@${{secrets.EC2_HOST}} << EOF
             cd app/src/
             git pull origin main
             docker compose -f docker-compose-prod.yaml down
             docker compose -f docker-compose-prod.yaml up -d
             echo "Deployment successful"
-            
+            EOF
