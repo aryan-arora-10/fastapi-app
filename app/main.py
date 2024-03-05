@@ -33,7 +33,7 @@ app.include_router(vote.router)
 # @app is the decorator with get method
 @app.get("/") # path operation or route
 def root():
-    return {"message": "Hello from World"} # converts dict to json
+    return {"message": "Hello from World after CICD"} # converts dict to json
 # we will use uvicorn main:app 
 # the --reload flag in uvicorn allows us to auto start the server when we change the code
 
