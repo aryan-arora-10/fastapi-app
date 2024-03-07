@@ -36,7 +36,7 @@ access the protected paths with the lock icon 🔒 on them
 
 #### This route is reponsible for creating post, deleting post, updating post and Checkinh post
 
-### 3) Users route 👤
+### 3) Users route 🧑🆔
 
 #### This route is about creating users and searching user by id
 
