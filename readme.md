@@ -1,7 +1,7 @@
 # Social Media CRUD API Using FastAPI 🖥️
 
 Welcome to the Social Media CRUD API documentation. This project is a backend service built with FastAPI in Python, designed to handle basic social media operations such as creating, reading, updating, and deleting posts. Users can also upvote and downvote posts. The API uses OAuth2 with JWT tokens for authentication, ensuring secure access to the application. This covers the routes and installation. 
-Detailed info is available in 'various markdowns'/readmeforme.md  
+Detailed info is available in 'variousmarkdowns'/readmeforme.md  
 
 ## Features 📜
 
@@ -16,11 +16,11 @@ Detailed info is available in 'various markdowns'/readmeforme.md
 
 ## API Endpoint 🗂️
 
-Access the API at: [api.example.com](http://api.example.com)
+Access the API at: [api.aryandev.org](http://api.aryandev.org)
 
 ## ROUTES OF THE API
 ### See the OPENAPI documentation and interact with routes
-:       [api.aryandev.org/docs](https://api.aryandev.org/docs)
+Openapi documentation:       [api.aryandev.org/docs](https://api.aryandev.org/docs)
 
 ```
 Use the authorize section to login to your user after creating one and 
@@ -30,11 +30,11 @@ access the protected paths with the lock icon 🔒 on them
 
 ### 1) Auth route ✅
 
-#### This route is about login system. Create a user and then login
+#### This route is about login system. Create a user and then login.
 
 ### 2) Post route 📝
 
-#### This route is reponsible for creating post, deleting post, updating post and Checkinh post
+#### This route is reponsible for creating post, deleting post, updating post and fetching post
 
 ### 3) Users route 🧑🆔
 
@@ -43,7 +43,7 @@ access the protected paths with the lock icon 🔒 on them
 
 ### 4) Vote route  ⬆️⬇️
 
-#### This route is about likes or vote system and this route contain code for upvote or back vote there is not logic about down vote
+#### This route is about likes or vote system and this route allows us to upvote or downvote using 'dir' param
 
 
 ## Getting Started
@@ -53,7 +53,7 @@ access the protected paths with the lock icon 🔒 on them
 - Docker & Docker Compose
 - An AWS account (for RDS and EC2)
 
-### Installation
+### Local Installation
 
 1. Clone the repository:
 ```
@@ -65,7 +65,7 @@ cd fastapi-app
 ```
 3. Create venv
 ```
-see variousmarkdowns folder for detailed instructions
+see variousmarkdowns folder for detailed instructions including the systemd service
 ```
 
 4. Install dependencies
