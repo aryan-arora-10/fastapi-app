@@ -1,5 +1,5 @@
 # THE README.MD FASTAPI 
-####    FastAPI,Docker, PostgreSQL,ORM,CI/CD freecodecamp sanjeev thiagarajan
+####    FastAPI,Docker, PostgreSQL,ORM,CI/CD 
 
 ## INITIAL POINTERS AND VENV SETUP    
 ```
@@ -80,7 +80,9 @@ unset MYNAME
 printenv | grep MYNAME          
 ```
 ## HAVE ENV vars persist through a reboot
-might need to edit bashrc or .profile on the VM itself
+```
+Might need to edit bashrc or .profile on the VM itself
+```
 
 ## PYTEST and it's flags
 ```

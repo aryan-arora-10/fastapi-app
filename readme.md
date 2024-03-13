@@ -1,9 +1,10 @@
 # Social Media CRUD API Using FastAPI 🖥️
 
 Welcome to the Social Media CRUD API documentation. This project is a backend service built with FastAPI in Python, designed to handle basic social media operations such as creating, reading, updating, and deleting posts. Users can also upvote and downvote posts. The API uses OAuth2 with JWT tokens for authentication, ensuring secure access to the application. This covers the routes and installation. 
-Detailed info is available in 'variousmarkdowns'/readmeforme.md  
+#### Detailed project info is available in 
+### : [variousmarkdowns/readmeforme.md](./variousmarkdowns/readmeforme.md)
 
-## Features 📜
+## FEATURES 📜
 
 - **CRUD Operations**: Create, read, update, and delete posts.
 - **Vote System**: Users can upvote or downvote posts.
@@ -14,19 +15,19 @@ Detailed info is available in 'variousmarkdowns'/readmeforme.md
 - **Reverse Proxy**: Nginx used to direct requests from the internet to the application.
 - **CI/CD**: Automated testing and deployment using GitHub Actions, Docker Compose, and pytest.
 
-## API Endpoint 🗂️
+## API ENDPOINT 🗂️
 
-Access the API at: [api.aryandev.org](http://api.aryandev.org)
+### Access the API at: [api.aryandev.org](http://api.aryandev.org)
 
 ## ROUTES OF THE API
 ### See the OPENAPI documentation and interact with routes
-Openapi documentation:       [api.aryandev.org/docs](https://api.aryandev.org/docs)
+### Openapi documentation:       [api.aryandev.org/docs](https://api.aryandev.org/docs)
 
 ```
-Use the authorize section to login to your user after creating one and 
-access the protected paths with the lock icon 🔒 on them 
+    Use the authorize section to login to your user after creating one and 
+    access the protected paths with the lock icon 🔒 on them 
 ```
-#### This API  has 4 routes
+### This API  has 4 routes
 
 ### 1) Auth route ✅
 
@@ -46,7 +47,7 @@ access the protected paths with the lock icon 🔒 on them
 #### This route is about likes or vote system and this route allows us to upvote or downvote using 'dir' param
 
 
-## Getting Started
+## GETTING STARTED
 ### Prerequisites
 
 - Python 3.10
